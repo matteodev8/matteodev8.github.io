@@ -61,5 +61,17 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
-  ]
+    'seo',
+    {
+      siteTitle: (_, $site) => $site.title,
+      title: $page => $page.title,
+      description: $page => $page.frontmatter.description,
+      author: (_, $site) => $site.themeConfig.author,
+      tags: $page => $page.frontmatter.tags,
+      type: $page => ['guide', 'wiki', 'tutorial'].some(folder => $page.regularPath.startsWith('/' + folder)) ? 'article' : 'website',
+      url: (_, $site, path) => ($site.themeConfig.domain || '') + path,
+      publishedAt: $page => $page.frontmatter.date && new Date($page.frontmatter.date),
+      modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated),
+    }
+  ],
 }
