@@ -1,6 +1,6 @@
 # Installing AirTroller
 
-[AirTroller](https://github.com/sourcelocation/AirTroller) is an [TrollStore](https://github.com/opa334/TrollStore) app that allows you to spam people by exploiting AirDrop. In this guide, I will show you how to install AirTroller.
+[AirTroller](https://github.com/sourcelocation/AirTroller) is an [TrollStore](https://github.com/opa334/TrollStore) app that allows you to spam people with AirDrop messages. In this guide, I will show you how to install AirTroller.
 
 ::: danger
 AirTroller is for educational purposes only. Me or any of the involved developers are not responsible for any damage caused by this installation guide.
@@ -18,7 +18,7 @@ AirTroller is for educational purposes only. Me or any of the involved developer
 **A**: If its running on a compatible iOS version, yes you can since TrollStore isn't limited to hardware.
 
 **Q**: Is a jailbreak required? \
-**A**: No, a jailbreak is not required, you only need TrollStore.
+**A**: A: You **must have either** TrollStore or a Jailbreak to install and use the app.
 
 
 
@@ -28,7 +28,8 @@ TrollStore is an app that can be used to install `.ipa` files on iOS. See the ch
 
 | iOS Version | Compatible? |
 | :--- | :--- |
-| 13.7 and <u>**below**</u> | ❌ No |
+| 12.0 | ✅ Yes (requires [this](https://github.com/haxi0/AirTroller12) version of AirTroller) |
+| 13.7 and <u>**below**</u> | ❌ No |YY
 | 14.0 - 14.8.1 | ✅ Yes |
 | 15.0 - 15.4.1 | ✅ Yes |
 | 15.5 beta 1 - 4 | ✅ Yes |
@@ -71,6 +72,8 @@ Congrats, you now have AirTroller installed!
 
 - [opa334](https://github.com/opa334) for creating TrollStore
 - [sourcelocation](https://github.com/sourcelocation) for creating AirTroller
+- [matteodev8 (Schrank)](https://github.com/matteodev8) (aka me) for creating this guide
+- [haxi0](https://github.com/haxi0/) for creating AirTroller12
 - [Apple](https://www.apple.com) for creating iOS
 - [GitHub](https://github.com) for hosting the source code of this guide
 - [VuePress](https://vuepress.vuejs.org) for creating this site
